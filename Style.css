@@ -1,0 +1,373 @@
+.navbar1 {
+  position: absolute;
+  background: transparent !important;
+  z-index: 10;
+  
+  border-bottom: 1px solid rgba(255, 255, 255, 0, 3);
+}
+.logo {
+  position: absolute;
+  background: transparent !important;
+  top: 1px;
+  left: 500px;
+  width: 40%;
+}
+/* .logo2{
+size:100px;
+} */
+
+.font {
+  position: absolute; 
+  background: transparent !important;
+  top: 1px;
+  left: 1050px;
+  width:100%;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.text2{
+  font-size: 14px;
+}
+.down {
+  margin-top: 80px;
+}
+
+/* Remove the bullet points */
+.bulletpoint {
+  list-style-type: none;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 150px;
+}
+
+/* Font text-color and background color change on the hover */
+
+.font2 {
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+.font2:hover {
+  background-color: black;
+}
+
+.font2:hover {
+  color: white;
+}
+
+/* ZOOM-IN AND ZOOM-OUT */
+
+.secondimg {
+  display: none;
+}
+.main_product:hover .secondimg{
+ display: block;
+}
+.main_product:hover .firstimg{
+ display: none;
+}
+
+.first {
+  overflow: hidden;
+}
+
+.first img {
+  transition: transform 0.1s;
+}
+
+.first:hover img {
+  transform: scale(0.2);
+}
+
+.font3 {
+  position:absolute;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.font3:hover {
+  background-color: black;
+}
+
+.font3:hover {
+  color: white;
+}
+.container2{
+  position: relative;
+}
+
+.button{
+  border-radius: 50%;
+}
+.underline{
+  text-decoration:none;
+  
+}
+/* Notification Signal On The Font Icons */
+.notification {
+  text-decoration: none;
+  position: relative;
+  /* display: inline-block; */
+  border-radius: 2px;
+}
+.badge{
+  size: 1px;
+}
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%;
+  background-color: rgba(7, 3, 3, 0.93);
+  color: white;
+}
+::selection{
+  color: #fff;
+  
+}
+.wrapper{
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 25px 40px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+header h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+header p{
+  margin-top: 5px;
+  font-size: 16px;
+}
+.price-input{
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+.price-input .field{
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+.field input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  margin-left: 12px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator{
+  width: 130px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.slider{
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress{
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: #17A2B8;
+}
+.range-input{
+  position: relative;
+}
+.range-input input{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #17A2B8;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+input[type="range"]::-moz-range-thumb{
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #17A2B8;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+/* Color Option */
+.color-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#selected-color {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.color-option {
+  border:10px;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Add a smooth transition effect for all properties */
+}
+
+.color-option:hover {
+  
+  transform: scale(0.8); /* Scale the button to 120% of its original size on hover */
+}
+/* Size of categories */
+.size-button{
+  margin: 5px;
+  width: 70px;
+}
+
+ /* CSS to style the image container */
+ .image-container {
+  position: relative;
+}
+
+/* CSS to position the icon container at the bottom of the second image */
+.icon-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Optional: Add background to make icons more visible */
+}
+
+/* CSS to hide the icons by default */
+.icon-container i {
+  display: none;
+}
+
+/* CSS to show the icons when hovering over the first image */
+.image-container:hover .icon-container i {
+  display: inline-block;
+}
+
+.hot{
+ position: absolute;
+ background: #632828;
+ font-size:13px;
+ width:40px;
+ top: 10px;
+ left: 10px;
+}
+.hot1{
+  position: absolute;
+  background:white;
+  font-size:13px;
+  border: 2px;
+  border: #050404;
+  width: 40px;
+  top: 10px;
+  left: 60px;
+ }
+ .hot2{
+  position: absolute;
+  background:white;
+  font-size:13px;
+  border: 2px;
+  border: #050404;
+  width: 40px;
+  top: 10px;
+  left: 20px;
+ }
+
+
+ /* CSS to style the image container */
+ .image-container1 {
+  position: relative;
+}
+
+/* CSS to position the icon container at the bottom of the second image */
+.icon-container1 {
+  position: absolute;
+  right:0%;
+  top: 5px;;
+  bottom: 50%;
+  left: 90%;
+  transform: translateX(-50%);
+  /* Optional: Add background to make icons more visible */
+}
+
+/* CSS to hide the icons by default */
+.icon-container1 i {
+  display: none;
+}
+
+/* CSS to show the icons when hovering over the first image */
+.image-container1:hover .icon-container1 i {
+  display: inline-block;
+}
+
+.zoom {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.zoom img {
+  width: 100%;
+  transition: 0.8s all ease-in-out;
+}
+
+.zoom:hover img {
+  transform: scale(1.1);
+}
+
+.zoom1 {
+  overflow: hidden;
+
+}
+
+.zoom1 img {
+ 
+  transition: 0.5s all ease-in-out;
+}
+
+.zoom1:hover img {
+  transform: scale(0.97);
+}

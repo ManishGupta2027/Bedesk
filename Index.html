@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./bootstrap-5.3.0/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+  <link href="./bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./Style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Index</title>
+</head>
+
+<body>
+
+  <div class="row container-fluid">
+    <!-- Navbar -->
+    <div class="fixed-top">
+      <nav id="dynamicNav" class="navbar1 navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="col-5">
+            <ul class="navbar-nav my-2 text mr-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link active text-white mx-2" aria-current="page" href="./Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-2" aria-current="page" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-2" aria-current="page" href="./Product_List.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-2" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-2" aria-current="page" href="./Index.html">Page</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 logo my-3">
+            <img src="./Images/Index_Images/logo-white.png" alt="" class="img-fluid my-1">
+          </div>
+          <div class="col-2"></div>
+          <div class="col-2 my-3 font text-white">
+            <i class="fa-solid fa-magnifying-glass mx-2 my-2"></i>
+            <i class="fa-regular fa-user mx-2 my-2"></i>
+            <a href="#" class="notification">
+              <span><i class="fa-regular fa-heart mx-2 my-2 text-white"></i></span>
+              <span class="badge">0</span>
+            </a>
+            <a href="#" class="notification">
+              <span><i class="fa-solid fa-bag-shopping mx-2 my-2 text-white"></i></span>
+              <span class="badge">2</span>
+            </a>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+
+  <!-- Navbar Scrolldown -->
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#dynamicNav').addClass('shadow p-3 mb-5 bg-body-tertiary');
+      } else {
+        $('#dynamicNav').removeClass('shadow p-3 mb-5 bg-body-tertiary');
+      }
+    });
+  </script>
+
+  <!-- Carousel -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Images/Index_Images/slide3-1-23.jpg" class="" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./Images/Index_Images/slide3-2-966.jpg" class="" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./Images/Index_Images/slide3-3-938.jpg" class="" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- <main class="container-fluid"> -->
+
+  <!-- Recommended For You Section Start -->
+
+  <div class="container-fluid">
+    <div class="my-3">
+      <div class="row my-5">
+        <h2>Recommended For You</h2>
+      </div>
+      <div class="row">
+        <div class="col-3 main_product">
+          <div class="image-container">
+            <img src="./Images/Index_Images/product-11.jpg" alt="" class="img-fluid firstimg">
+            <img src="./Images/Index_Images/product-11-2.jpg" alt="" class="img-fluid secondimg">
+            <p class="hot text-center text-white">HOT</p>
+            <p class="hot1 text-center text-dark">-33%</p>
+            <div class="text-center mb-2 icon-container">
+              <i class="font2 fa-solid fa-arrow-right"></i>
+              <i class="font2 fa-solid fa-magnifying-glass"></i>
+              <i class="font2 fa-solid fa-right-left"></i>
+              <i class="font2 fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <p class="my-3">Elia Mock Neck Cutout Sweater</p>
+          <p>100.00$ – 120.00$</p>
+        </div>
+        <div class="col-3 main_product">
+          <div class="image-container">
+            <img src="./Images/Index_Images/product-24.jpg" alt="" class="img-fluid firstimg">
+            <img src="./Images/Index_Images/product-24-2.jpg" alt="" class="img-fluid secondimg">
+            <p class="hot text-center text-white">HOT</p>
+            <div class="text-center mb-2 icon-container">
+              <i class="font2 fa-solid fa-arrow-right"></i>
+              <i class="font2 fa-solid fa-magnifying-glass"></i>
+              <i class="font2 fa-solid fa-right-left"></i>
+              <i class="font2 fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <p class="my-3">Elia Mock Neck Cutout Sweater</p>
+          <p>100.00$ – 120.00$</p>
+          <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+          <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+          <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+        </div>
+        <div class="col-3 main_product">
+          <div class="image-container">
+            <img src="./Images/Index_Images/product-1.jpg" alt="" class="img-fluid firstimg">
+            <img src="./Images/Index_Images/product-1-2.jpg" alt="" class="img-fluid secondimg">
+            <p class="hot text-center text-white">HOT</p>
+            <p class="hot1 text-center text-dark">-33%</p>
+            <div class="text-center mb-2 icon-container">
+              <i class="font2 fa-solid fa-arrow-right"></i>
+              <i class="font2 fa-solid fa-magnifying-glass"></i>
+              <i class="font2 fa-solid fa-right-left"></i>
+              <i class="font2 fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <p class="my-3">Elia Mock Neck Cutout Sweater</p>
+          <p>100.00$ – 120.00$</p>
+          <i class="fa-regular fa-circle bg-dark button text-dark  mx-2"></i>
+          <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+          <i class="fa-regular fa-circle bg-info button text-info mx-2"></i>
+        </div>
+        <div class="col-3 main_product">
+          <div class="image-container">
+            <img src="./Images/Index_Images/product-15.jpg" alt="" class="img-fluid firstimg">
+            <img src="./Images/Index_Images/product-15-2.jpg" alt="" class="img-fluid secondimg">
+            <p class="hot2 text-center text-dark">-20%</p>
+            <div class="text-center mb-2 icon-container">
+              <i class="font2 fa-solid fa-arrow-right"></i>
+              <i class="font2 fa-solid fa-magnifying-glass"></i>
+              <i class="font2 fa-solid fa-right-left"></i>
+              <i class="font2 fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <p class="my-3">Elia Mock Neck Cutout Sweater</p>
+          <p>100.00$ – 120.00$</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Zoom-in And Zoom-out Section Started -->
+
+    <div class="">
+      <div class="row">
+        <div class="col-6 zoom">
+          <div class="zoom">
+            <img src="./Images/Index_Images/home-banner-1.jpg" alt="" class="img-fluid">
+          </div>
+          <h4 class="my-4">Elevate Your Style Game</h4>
+          <p>Find Your Fashion Inspiration Here</p>
+          <button type="button" class="btn btn-outline-dark w-25">Shop</button>
+        </div>
+        <div class="col-6">
+          <div class="zoom">
+            <img src="./Images/Index_Images/home-banner-2.jpg" alt="" class="img-fluid">
+          </div>
+          <h4 class="my-4">Fashion Forward Finds</h4>
+          <p>Discover the Latest Styles for Men and Women</p>
+          <button type="button" class="btn btn-outline-dark w-25">Shop</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner Section Started -->
+
+    <div class="">
+      <div class="row">
+        <div class="col-12 my-5 border bg-warning">
+          <h1 class="text-center mt-5">Buy better. Buy less. Wear more.</h1>
+          <p class="text-center mb-5">SHOP TRENDING COLLECTION</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shop by categories Section Started    -->
+
+    <div class="">
+      <div class="row my-3">
+        <h3>Shop by categories</h3>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <img src="./Images/Index_Images/category-1.jpg" alt="" class="img-fluid">
+          <p class="my-2 text">Clothing</p>
+        </div>
+        <div class="col-3">
+          <img src="./Images/Index_Images/category-2.jpg" alt="" class="img-fluid">
+          <p class="my-2 text">Dresses</p>
+        </div>
+        <div class="col-3">
+          <img src="./Images/Index_Images/category-3.jpg" alt="" class="img-fluid">
+          <p class="my-2 text">Shoes</p>
+        </div>
+        <div class="col-3">
+          <img src="./Images/Index_Images/category-6.jpg" alt="" class="img-fluid">
+          <p class="my-2 text"> Outerwear</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 my-5 text-center">
+          <button type="button" class="btn btn-outline-dark w-25 ">Shop All Categories</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Store Section Started -->
+
+    <div class="">
+      <div class="row my-3">
+        <div class="col-4 text-center down">
+          <h3 class="down">Our Store</h3>
+          <p>136 Street Suite 456 City, State</p>
+          <p>12345, UK</p>
+          <p>info@jewelryshop.com</p>
+          <p>1800-123-4567</p>
+          <button type="button" class="btn btn-outline-dark">GET DIRECTION</button>
+        </div>
+        <div class="col-8 zoom">
+          <img src="./Images/Index_Images/home-banner-3.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+
+      <!-- Get Inspired Section Started -->
+
+      <div class="">
+        <div class="row">
+          <div class="col-12 my-4">
+            <h3>Get Inspired</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 zoom1">
+            <img src="./Images/Index_Images/ig-7.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-2 zoom1">
+            <img src="./Images/Index_Images/ig-8.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-2 zoom1">
+            <img src="./Images/Index_Images/ig-6.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-2 zoom1">
+            <img src="./Images/Index_Images/ig-4.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-2 zoom1">
+            <img src="./Images/Index_Images/ig-5.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-2 zoom1">
+            <img src="./Images/Index_Images/ig-4.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </main> -->
+  <hr>
+  <!-- Footer Section Start -->
+  <div class="row container-fluid">
+    <div class="col-3 mt-5">
+      <ul class="bulletpoint">EXPRORE
+        <li class="mt-3">jewelry</li>
+        <li>High jewelry</li>
+        <li>Wedding & Engagement</li>
+        <li>Provenance and Peace</li>
+        <li>The 4Cs</li>
+      </ul>
+      <p class="copyright">Copyright © 2023. All Rights Reserved.</p>
+    </div>
+    <div class="col-3 mt-5">
+      <ul class="bulletpoint">Help
+        <li class="mt-3">FAQs</li>
+        <li>Shipping</li>
+        <li>Returns</li>
+        <li>Size Guides</li>
+        <li>Material & Care</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="col-3 mt-5">
+      <ul class="bulletpoint">About Us
+        <li class="mt-3">About us</li>
+        <li>The Rewards Stack</li>
+        <li>Substainability</li>
+        <li>Careers</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+    <div class="col-3 my-5">
+      <ul>SIGN UP FOR 10% OFF
+        <p class="my-3">Be the first to know about new releases, exclusive promotions, events and styling tips!</p>
+      </ul>
+      <div class="input-group my-5">
+        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username"
+          aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+      </div>
+      <i class="font2 fa-brands fa-twitter mx-2"></i>
+      <i class="font2 fa-brands fa-instagram mx-2"></i>
+      <i class="font2 fa-brands fa-facebook mx-2"></i>
+      <i class="font2 fa-solid fa-globe mx-2"></i>
+
+      <img src="./Images/Index_Images/payments (1).png" alt="" class="img-fluid mt-4">
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./bootstrap-5.3.0/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+  <link href="./bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./Style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Product_List</title>
+</head>
+
+<body>
+  <div class="row container-fluid my-5">
+    <!-- Navbar Section Started -->
+    <div class="fixed-top">
+      <nav id="dynamicNav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="col-5">
+          <div class="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Page</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <img src="./Images/Product_List_Images/logo.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <i class="fa-solid fa-magnifying-glass mx-2 my-2"></i>
+          <i class="fa-regular fa-user mx-2 my-2"></i>
+          <a href="#" class="notification">
+            <span><i class="fa-regular fa-heart mx-2 my-2 text-dark"></i></span>
+            <span class="badge">0</span>
+          </a>
+          <a href="#" class="notification">
+            <span><i class="fa-solid fa-bag-shopping mx-2 my-2 text-dark"></i></span>
+            <span class="badge">2</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Navbar Scrolldown -->
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#dynamicNav').addClass('shadow p-3 mb-5');
+      } else {
+        $('#dynamicNav').removeClass('shadow p-3 mb-5');
+      }
+    });
+  </script>
+
+  <!-- Shop Section Started-->
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-12">
+        <h2>Shop</h2>
+      </div>
+    </div>
+    <!-- Carousel Section Started -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <div class="row ">
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-12.jpg" alt="" class="img-fluid">
+              <p class="my-2">Outerwear</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-15.jpg" alt="" class="img-fluid">
+              <p class="my-2">Sweaters</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-11.jpg" alt="" class="img-fluid">
+              <p class="my-2">Dresses</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-10.jpg" alt="" class="img-fluid">
+              <p class="my-2">Bodysuits</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-9.jpg" alt="" class="img-fluid">
+              <p class="my-2">All Clothes</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-13.jpg" alt="" class="img-fluid">
+              <p class="my-2">Sweaters</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row ">
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-11.jpg" alt="" class="img-fluid">
+              <p class="my-2">Dresses</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-12.jpg" alt="" class="img-fluid">
+              <p class="my-2">Outerwear</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-9.jpg" alt="" class="img-fluid">
+              <p class="my-2">All Clothes</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-13.jpg" alt="" class="img-fluid">
+              <p class="my-2">Sweaters</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-15.jpg" alt="" class="img-fluid">
+              <p class="my-2">Sweaters</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-10.jpg" alt="" class="img-fluid">
+              <p class="my-2">Bodysuits</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-11.jpg" alt="" class="img-fluid">
+              <p class="my-2">Dresses</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-13.jpg" alt="" class="img-fluid">
+              <p class="my-2">Sweaters</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-12.jpg" alt="" class="img-fluid">
+              <p class="my-2">Outerwear</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-10.jpg" alt="" class="img-fluid">
+              <p class="my-2">Bodysuits</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-9.jpg" alt="" class="img-fluid">
+              <p class="my-2">All Clothes</p>
+            </div>
+            <div class="col-2">
+              <img src="./Images/Product_List_Images/ctg-15.jpg" alt="" class="img-fluid">
+              <p class="my-2">Sweaters</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- CATEGORIES Section Started -->
+
+     <div class="row">
+      <div class="col-3">
+        <p class="my-5">
+          CATEGORIES
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            All Clothes(24)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Bodysuits(2)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+          <label class="form-check-label" for="defaultCheck3">
+            Dresses
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+          <label class="form-check-label" for="defaultCheck4">
+            Outwear
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+          <label class="form-check-label" for="defaultCheck5">
+            Sweater
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+          <label class="form-check-label" for="defaultCheck6">
+            Tops
+          </label>
+        </div>
+    <!-- Price Range -->
+     <div class="wrapper img-fluid">
+          <header>
+            <h2>Price Range</h2>
+
+          </header>
+          <div class="price-input">
+            <div class="field">
+              <span>Min</span>
+              <input type="number" class="input-min" value="2500">
+            </div>
+            <div class="separator">-</div>
+            <div class="field">
+              <span>Max</span>
+              <input type="number" class="input-max" value="7500">
+            </div>
+          </div>
+          <div class="slider">
+            <div class="progress"></div>
+          </div>
+          <div class="range-input">
+            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+          </div>
+        </div>
+        <script src="script.js"></script>
+
+        <script>
+          const rangeInput = document.querySelectorAll(".range-input input"),
+            priceInput = document.querySelectorAll(".price-input input"),
+            range = document.querySelector(".slider .progress");
+          let priceGap = 1000;
+
+          priceInput.forEach(input => {
+            input.addEventListener("input", e => {
+              let minPrice = parseInt(priceInput[0].value),
+                maxPrice = parseInt(priceInput[1].value);
+
+              if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) {
+                if (e.target.className === "input-min") {
+                  rangeInput[0].value = minPrice;
+                  range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                } else {
+                  rangeInput[1].value = maxPrice;
+                  range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                }
+              }
+            });
+          });
+
+          rangeInput.forEach(input => {
+            input.addEventListener("input", e => {
+              let minVal = parseInt(rangeInput[0].value),
+                maxVal = parseInt(rangeInput[1].value);
+
+              if ((maxVal - minVal) < priceGap) {
+                if (e.target.className === "range-min") {
+                  rangeInput[0].value = maxVal - priceGap
+                } else {
+                  rangeInput[1].value = minVal + priceGap;
+                }
+              } else {
+                priceInput[0].value = minVal;
+                priceInput[1].value = maxVal;
+                range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+                range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+              }
+            });
+          });
+        </script> 
+
+    <!-- Color Categories -->
+     <h5>Color</h5>
+        <div class="color-options">
+          <div class="color-option" style="background-color: red;"></div>
+          <div class="color-option" style="background-color: green;"></div>
+          <div class="color-option" style="background-color: blue;"></div>
+          <div class="color-option" style="background-color: black;"></div>
+          <div class="color-option" style="background-color: yellow;"></div>
+          <div class="color-option" style="background-color: pink;"></div>
+        </div> 
+
+    <!-- Size Categories -->
+     <h5 class="my-4 ms-3">SIZE</h5>
+        <button type="button" class="btn btn-outline-dark border-black size-button">XS</button>
+        <button type="button" class="btn btn-outline-dark border-black size-button">S</button>
+        <button type="button" class="btn btn-outline-dark border-black size-button">M</button>
+        <button type="button" class="btn btn-outline-dark border-black size-button">L</button>
+        <button type="button" class="btn btn-outline-dark border-black size-button">XL</button> -->
+
+    <!-- Brands  -->
+   <h5>Brands</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Adama(3)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+          <label class="form-check-label" for="defaultCheck3">
+            August(4)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+          <label class="form-check-label" for="defaultCheck4">
+            Hevenly(3)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+          <label class="form-check-label" for="defaultCheck5">
+            Preda(1)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+          <label class="form-check-label" for="defaultCheck6">
+            Yono(1)
+          </label>
+        </div>
+      </div>
+      <div class="col-3 my-4">
+        <p class="mt-4 text-center">
+          Showing 1–12 of 24 item()
+        </p>
+        <div class="col-12 my-3 main_product">
+          <a href="./Product_Detail.html">
+            <div class="image-container1">
+              <img src="./Images/Product_List_Images/product-3.jpg" alt="" class="img-fluid firstimg">
+              <img src="./Images/Product_List_Images/product-3-5.jpg" alt="" class="img-fluid secondimg">
+              <div class="text-center mb-2 icon-container1">
+                <i class="font2 my- fa-solid fa-arrow-right"></i>
+                <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+                <i class="font2 my- fa-solid fa-right-left"></i>
+                <i class="font2 my-1 fa-regular fa-heart"></i>
+              </div>
+              <p class="hot text-center text-white">HOT</p>
+              <p class="hot1 text-center text-dark">-33%</p>
+              <p class="hot text-center text-white">HOT</p>
+              <p class="hot1 text-center text-dark">-33%</p>
+          </a>
+          <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+          <p>150.00$ 130.00$</p>
+          <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+          <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+          <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+        </div>
+      </div>
+      <div class="col-12 my-3 main_product">
+        <a href="./Product_Detail.html">
+          <div class="image-container1">
+            <img src="./Images/Product_List_Images/product-14.jpg" alt="" class="img-fluid firstimg">
+            <img src="./Images/Product_List_Images/product-14-2.jpg" alt="" class="img-fluid secondimg">
+            <div class="text-center mb-2 icon-container1">
+              <i class="font2 my- fa-solid fa-arrow-right"></i>
+              <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+              <i class="font2 my- fa-solid fa-right-left"></i>
+              <i class="font2 my-1 fa-regular fa-heart"></i>
+            </div>
+            <p class="hot text-center text-white">HOT</p>
+            <p class="hot1 text-center text-dark">-33%</p>
+            <p class="hot text-center text-white">HOT</p>
+            <p class="hot1 text-center text-dark">-33%</p>
+        </a>
+        <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+        <p>150.00$ 130.00$</p>
+        <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+        <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+        <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+      </div>
+    </div>
+    <div class="col-12 my-3 main_product">
+      <a href="./Product_Detail.html">
+        <div class="image-container1">
+          <img src="./Images/Product_List_Images/product-4.jpg" alt="" class="img-fluid firstimg">
+          <img src="./Images/Product_List_Images/product-4-2.jpg" alt="" class="img-fluid secondimg">
+          <div class="text-center mb-2 icon-container1">
+            <i class="font2 my- fa-solid fa-arrow-right"></i>
+            <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+            <i class="font2 my- fa-solid fa-right-left"></i>
+            <i class="font2 my-1 fa-regular fa-heart"></i>
+          </div>
+          <p class="hot text-center text-white">HOT</p>
+          <p class="hot1 text-center text-dark">-33%</p>
+          <p class="hot text-center text-white">HOT</p>
+          <p class="hot1 text-center text-dark">-33%</p>
+      </a>
+      <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+      <p>150.00$ 130.00$</p>
+      <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+      <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+      <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+    </div>
+  </div>
+  <div class="col-12 my-3 main_product">
+    <a href="./Product_Detail.html">
+      <div class="image-container1">
+        <img src="./Images/Product_List_Images/product-10.jpg" alt="" class="img-fluid firstimg">
+        <img src="./Images/Product_List_Images/product-10-2.jpg" alt="" class="img-fluid secondimg">
+        <div class="text-center mb-2 icon-container1">
+          <i class="font2 my- fa-solid fa-arrow-right"></i>
+          <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+          <i class="font2 my- fa-solid fa-right-left"></i>
+          <i class="font2 my-1 fa-regular fa-heart"></i>
+        </div>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+    </a>
+    <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+    <p>150.00$ 130.00$</p>
+    <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+    <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+    <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+  </div>
+  </div>
+  </div>
+  <div class="col-3 text-center my-4">
+    <i class="fa-solid fa-ellipsis my-3 mx-3"></i>
+    <i class="fa-solid fa-braille my-3"></i>
+    <div class="col-12 my-3 main_product">
+      <a href="./Product_Detail.html">
+        <div class="image-container1">
+          <img src="./Images/Product_List_Images/product-11.jpg" alt="" class="img-fluid firstimg">
+          <img src="./Images/Product_List_Images/product-11-2.jpg" alt="" class="img-fluid secondimg">
+          <div class="text-center mb-2 icon-container1">
+            <i class="font2 my- fa-solid fa-arrow-right"></i>
+            <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+            <i class="font2 my- fa-solid fa-right-left"></i>
+            <i class="font2 my-1 fa-regular fa-heart"></i>
+          </div>
+          <p class="hot text-center text-white">HOT</p>
+          <p class="hot1 text-center text-dark">-33%</p>
+          <p class="hot text-center text-white">HOT</p>
+          <p class="hot1 text-center text-dark">-33%</p>
+      </a>
+      <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+      <p>150.00$ 130.00$</p>
+      <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+      <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+      <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+    </div>
+  </div>
+  <div class="col-12 my-3 main_product">
+    <a href="./Product_Detail.html">
+      <div class="image-container1">
+        <img src="./Images/Product_List_Images/product-13.jpg" alt="" class="img-fluid firstimg">
+        <img src="./Images/Product_List_Images/product-13-2.jpg" alt="" class="img-fluid secondimg">
+        <div class="text-center mb-2 icon-container1">
+          <i class="font2 my- fa-solid fa-arrow-right"></i>
+          <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+          <i class="font2 my- fa-solid fa-right-left"></i>
+          <i class="font2 my-1 fa-regular fa-heart"></i>
+        </div>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+    </a>
+    <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+    <p>150.00$ 130.00$</p>
+    <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+    <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+    <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+  </div>
+  </div>
+  <div class="col-12 my-3 main_product">
+    <a href="./Product_Detail.html">
+      <div class="image-container1">
+        <img src="./Images/Product_List_Images/product-15.jpg" alt="" class="img-fluid firstimg">
+        <img src="./Images/Product_List_Images/product-15-2.jpg" alt="" class="img-fluid secondimg">
+        <div class="text-center mb-2 icon-container1">
+          <i class="font2 my- fa-solid fa-arrow-right"></i>
+          <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+          <i class="font2 my- fa-solid fa-right-left"></i>
+          <i class="font2 my-1 fa-regular fa-heart"></i>
+        </div>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+    </a>
+    <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+    <p>150.00$ 130.00$</p>
+    <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+    <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+    <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+  </div>
+  </div>
+  <div class="col-12 my-3 main_product">
+    <a href="./Product_Detail.html">
+      <div class="image-container1">
+        <img src="./Images/Product_List_Images/product-16.jpg" alt="" class="img-fluid firstimg">
+        <img src="./Images/Product_List_Images/product-16-2.jpg" alt="" class="img-fluid secondimg">
+        <div class="text-center mb-2 icon-container1">
+          <i class="font2 my- fa-solid fa-arrow-right"></i>
+          <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+          <i class="font2 my- fa-solid fa-right-left"></i>
+          <i class="font2 my-1 fa-regular fa-heart"></i>
+        </div>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+    </a>
+    <p class="hot text-center text-white">HOT</p>
+    <p class="hot1 text-center text-dark">-33%</p>
+    <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+    <p>150.00$ 130.00$</p>
+    <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+    <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+    <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+  </div>
+  </div>
+  </div>
+  <div class="col-3 text-center my-4">
+    <button type="button" class="btn btn-outline-dark">
+      <div class="dropdown">
+        <a class="btn btn-close-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Default Sorting
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </button>
+    <div class="col-12 my-3 main_product">
+      <a href="./Product_Detail.html">
+        <div class="image-container1">
+          <img src="./Images/Product_List_Images/product-17.jpg" alt="" class="img-fluid firstimg">
+          <img src="./Images/Product_List_Images/product-17-2.jpg" alt="" class="img-fluid secondimg">
+          <div class="text-center mb-2 icon-container1">
+            <i class="font2 my- fa-solid fa-arrow-right"></i>
+            <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+            <i class="font2 my- fa-solid fa-right-left"></i>
+            <i class="font2 my-1 fa-regular fa-heart"></i>
+          </div>
+          <p class="hot text-center text-white">HOT</p>
+          <p class="hot1 text-center text-dark">-33%</p>
+      </a>
+      <p class="hot text-center text-white">HOT</p>
+      <p class="hot1 text-center text-dark">-33%</p>
+      <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+      <p>150.00$ 130.00$</p>
+      <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+      <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+      <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+    </div>
+  </div>
+  <div class="col-12 my-3 main_product">
+    <a href="./Product_Detail.html">
+      <div class="image-container1">
+        <img src="./Images/Product_List_Images/product-1.jpg" alt="" class="img-fluid firstimg">
+        <img src="./Images/Product_List_Images/product-1-2.jpg" alt="" class="img-fluid secondimg">
+        <div class="text-center mb-2 icon-container1">
+          <i class="font2 my- fa-solid fa-arrow-right"></i>
+          <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+          <i class="font2 my- fa-solid fa-right-left"></i>
+          <i class="font2 my-1 fa-regular fa-heart"></i>
+        </div>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+    </a>
+    <p class="hot text-center text-white">HOT</p>
+    <p class="hot1 text-center text-dark">-33%</p>
+    <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+    <p>150.00$ 130.00$</p>
+    <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+    <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+    <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+  </div>
+  </div>
+  <div class="col-12 my-3 main_product">
+    <a href="./Product_Detail.html">
+      <div class="image-container1">
+        <img src="./Images/Product_List_Images/product-2.jpg" alt="" class="img-fluid firstimg">
+        <img src="./Images/Product_List_Images/product-2-2.jpg" alt="" class="img-fluid secondimg">
+        <div class="text-center mb-2 icon-container1">
+          <i class="font2 my- fa-solid fa-arrow-right"></i>
+          <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+          <i class="font2 my- fa-solid fa-right-left"></i>
+          <i class="font2 my-1 fa-regular fa-heart"></i>
+        </div>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+      </a>
+        <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+        <p>150.00$ 130.00$</p>
+        <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+        <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+        <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+      </div>
+  </div>
+  <div class="col-12 my-3 main_product">
+    <a href="./Product_Detail.html">
+      <div class="image-container1">
+        <img src="./Images/Product_List_Images/product-22.jpg" alt="" class="img-fluid firstimg">
+        <img src="./Images/Product_List_Images/product-22-4.jpg" alt="" class="img-fluid secondimg">
+        <div class="text-center mb-2 icon-container1">
+          <i class="font2 my- fa-solid fa-arrow-right"></i>
+          <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+          <i class="font2 my- fa-solid fa-right-left"></i>
+          <i class="font2 my-1 fa-regular fa-heart"></i>
+        </div>
+        <p class="hot text-center text-white">HOT</p>
+        <p class="hot1 text-center text-dark">-33%</p>
+      </div>
+    </a>
+    <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+    <p>150.00$ 130.00$</p>
+  </div>
+  <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+  <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+  <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+  </div>
+  <p class="text-center mt-5">Showing 1–12 of 24 item(s)</p>
+  <p class="text-center mb-5"><button type="button" class="btn btn-outline-dark w-25">LOAD MORE</button></p>
+  <hr class="mt-5"> --> -->
+
+
+<!-- 
+    <div class="row">
+      <div class="col-3">
+        <p class="my-5">
+          CATEGORIES
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            All Clothes(24)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Bodysuits(2)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+          <label class="form-check-label" for="defaultCheck3">
+            Dresses
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+          <label class="form-check-label" for="defaultCheck4">
+            Outwear
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+          <label class="form-check-label" for="defaultCheck5">
+            Sweater
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+          <label class="form-check-label" for="defaultCheck6">
+            Tops
+          </label>
+        </div>
+        <!-- Price Range -->
+        <!-- <div class="wrapper img-fluid">
+          <header>
+            <h2>Price Range</h2>
+
+          </header>
+          <div class="price-input">
+            <div class="field">
+              <span>Min</span>
+              <input type="number" class="input-min" value="2500">
+            </div>
+            <div class="separator">-</div>
+            <div class="field">
+              <span>Max</span>
+              <input type="number" class="input-max" value="7500">
+            </div>
+          </div>
+          <div class="slider">
+            <div class="progress"></div>
+          </div>
+          <div class="range-input">
+            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+          </div>
+        </div>
+        <script src="script.js"></script>
+
+        <script>
+          const rangeInput = document.querySelectorAll(".range-input input"),
+            priceInput = document.querySelectorAll(".price-input input"),
+            range = document.querySelector(".slider .progress");
+          let priceGap = 1000;
+
+          priceInput.forEach(input => {
+            input.addEventListener("input", e => {
+              let minPrice = parseInt(priceInput[0].value),
+                maxPrice = parseInt(priceInput[1].value);
+
+              if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) {
+                if (e.target.className === "input-min") {
+                  rangeInput[0].value = minPrice;
+                  range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                } else {
+                  rangeInput[1].value = maxPrice;
+                  range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                }
+              }
+            });
+          });
+
+          rangeInput.forEach(input => {
+            input.addEventListener("input", e => {
+              let minVal = parseInt(rangeInput[0].value),
+                maxVal = parseInt(rangeInput[1].value);
+
+              if ((maxVal - minVal) < priceGap) {
+                if (e.target.className === "range-min") {
+                  rangeInput[0].value = maxVal - priceGap
+                } else {
+                  rangeInput[1].value = minVal + priceGap;
+                }
+              } else {
+                priceInput[0].value = minVal;
+                priceInput[1].value = maxVal;
+                range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+                range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+              }
+            });
+          });
+        </script>
+
+        <!-- Color Categories -->
+        <h5>Color</h5>
+        <div class="color-options">
+          <div class="color-option" style="background-color: red;"></div>
+          <div class="color-option" style="background-color: green;"></div>
+          <div class="color-option" style="background-color: blue;"></div>
+          <div class="color-option" style="background-color: black;"></div>
+          <div class="color-option" style="background-color: yellow;"></div>
+          <div class="color-option" style="background-color: pink;"></div>
+        </div>
+
+        <!-- Size Categories -->
+        <h5 class="my-4 ms-3">SIZE</h5>
+        <button type="button" class="btn btn-outline-dark border-black size-button">XS</button>
+        <button type="button" class="btn btn-outline-dark border-black size-button">S</button>
+        <button type="button" class="btn btn-outline-dark border-black size-button">M</button>
+        <button type="button" class="btn btn-outline-dark border-black size-button">L</button>
+        <button type="button" class="btn btn-outline-dark border-black size-button">XL</button>
+
+        <!-- Brands  -->
+        <h5>Brands</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Adama(3)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+          <label class="form-check-label" for="defaultCheck3">
+            August(4)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+          <label class="form-check-label" for="defaultCheck4">
+            Hevenly(3)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+          <label class="form-check-label" for="defaultCheck5">
+            Preda(1)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+          <label class="form-check-label" for="defaultCheck6">
+            Yono(1)
+          </label>
+        </div>
+      </div>
+
+      <div class="col-9">
+        <div class="row">
+          <div class="col-3">
+            <p class="mt-4 text-center">
+              Showing 1–12 of 24 item()
+            </p>
+            <div class="my-3 main_product">
+              <a href="./Product_Detail.html">
+                <div class="image-container1">
+                  <img src="./Images/Product_List_Images/product-3.jpg" alt="" class="img-fluid firstimg">
+                  <img src="./Images/Product_List_Images/product-3-5.jpg" alt="" class="img-fluid secondimg">
+                  <div class="text-center mb-2 icon-container1">
+                    <i class="font2 my- fa-solid fa-arrow-right"></i>
+                    <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+                    <i class="font2 my- fa-solid fa-right-left"></i>
+                    <i class="font2 my-1 fa-regular fa-heart"></i>
+                  </div>
+                  <p class="hot text-center text-white">HOT</p>
+                  <p class="hot1 text-center text-dark">-33%</p>
+                  <p class="hot text-center text-white">HOT</p>
+                  <p class="hot1 text-center text-dark">-33%</p>
+              </a>
+              <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+              <p>150.00$ 130.00$</p>
+              <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+              <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+              <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <p class="mt-4 text-center">
+              Showing 1–12 of 24 item()
+            </p>
+            <div class="my-3 main_product">
+              <a href="./Product_Detail.html">
+                <div class="image-container1">
+                  <img src="./Images/Product_List_Images/product-3.jpg" alt="" class="img-fluid firstimg">
+                  <img src="./Images/Product_List_Images/product-3-5.jpg" alt="" class="img-fluid secondimg">
+                  <div class="text-center mb-2 icon-container1">
+                    <i class="font2 my- fa-solid fa-arrow-right"></i>
+                    <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+                    <i class="font2 my- fa-solid fa-right-left"></i>
+                    <i class="font2 my-1 fa-regular fa-heart"></i>
+                  </div>
+                  <p class="hot text-center text-white">HOT</p>
+                  <p class="hot1 text-center text-dark">-33%</p>
+                  <p class="hot text-center text-white">HOT</p>
+                  <p class="hot1 text-center text-dark">-33%</p>
+              </a>
+              <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+              <p>150.00$ 130.00$</p>
+              <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+              <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+              <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <p class="mt-4 text-center">
+              Showing 1–12 of 24 item()
+            </p>
+
+            <div class="my-3 main_product">
+              <a href="./Product_Detail.html">
+                <div class="image-container1">
+                  <img src="./Images/Product_List_Images/product-3.jpg" alt="" class="img-fluid firstimg">
+                  <img src="./Images/Product_List_Images/product-3-5.jpg" alt="" class="img-fluid secondimg">
+                  <div class="text-center mb-2 icon-container1">
+                    <i class="font2 my- fa-solid fa-arrow-right"></i>
+                    <i class="font2 my-1 fa-solid fa-magnifying-glass"></i>
+                    <i class="font2 my- fa-solid fa-right-left"></i>
+                    <i class="font2 my-1 fa-regular fa-heart"></i>
+                  </div>
+                  <p class="hot text-center text-white">HOT</p>
+                  <p class="hot1 text-center text-dark">-33%</p>
+                  <p class="hot text-center text-white">HOT</p>
+                  <p class="hot1 text-center text-dark">-33%</p>
+              </a>
+              <p class="text2">A SIVANA HALTER NECK FLORAL MAXI DRESS</p>
+              <p>150.00$ 130.00$</p>
+              <i class="fa-regular fa-circle bg-dark button text-dark mx-2"></i>
+              <i class="fa-regular fa-circle bg-warning button text-warning mx-2"></i>
+              <i class="fa-regular fa-circle bg-primary button text-primary mx-2"></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Footer Section Start -->
+  <div class="row">
+    <div class="col-3 mt-5">
+      <ul class="bulletpoint">EXPRORE
+        <li class="mt-3">jewelry</li>
+        <li>High jewelry</li>
+        <li>Wedding & Engagement</li>
+        <li>Provenance and Peace</li>
+        <li>The 4Cs</li>
+      </ul>
+      <p class="copyright">Copyright © 2023. All Rights Reserved.</p>
+    </div>
+    <div class="col-3 mt-5">
+      <ul class="bulletpoint">Help
+        <li class="mt-3">FAQs</li>
+        <li>Shipping</li>
+        <li>Returns</li>
+        <li>Size Guides</li>
+        <li>Material & Care</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="col-3 mt-5">
+      <ul class="bulletpoint">About Us
+        <li class="mt-3">About us</li>
+        <li>The Rewards Stack</li>
+        <li>Substainability</li>
+        <li>Careers</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+    <div class="col-3 my-5">
+      <ul>SIGN UP FOR 10% OFF
+        <p class="my-3">Be the first to know about new releases, exclusive promotions, events and styling tips!</p>
+      </ul>
+      <div class="input-group my-5">
+        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username"
+          aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+      </div>
+      <i class="font2 fa-brands fa-twitter mx-2"></i>
+      <i class="font2 fa-brands fa-instagram mx-2"></i>
+      <i class="font2 fa-brands fa-facebook mx-2"></i>
+      <i class="font2 fa-solid fa-globe mx-2"></i>
+
+      <img src="./Images/Index_Images/payments (1).png" alt="" class="img-fluid mt-4">
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
